@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  min-height: 100vh;
+  background-image: url("bgimg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+.glass-card {
+  width: 85%;
+  max-width: 1800px;
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  padding: 40px 45px;
+  color: #f5f5f5;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: #ffffff;
+}
+.subheading {
+  color: #cbd5e1;
+  margin: 0;
+  text-align: center;
+  font-size: 1rem;
+}
+hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin: 20px 0 25px 0;
+}
+.status {
+  text-align: center;
+  color: #e5e7eb;
+  font-size: 1rem;
+}
+.error-text {
+  color: #f87171;
+}
+.question-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 16px;
+}
+.question-text {
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.option {
+  display: block;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  color: #f1f5f9;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.option:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+.option input {
+  margin-right: 10px;
+  accent-color: #60a5fa;
+  cursor: pointer;
+}
+.correct {
+  background: rgba(34, 197, 94, 0.2) !important;
+  color: #86efac !important;
+  font-weight: 600;
+}
+.incorrect {
+  background: rgba(239, 68, 68, 0.2) !important;
+  color: #fca5a5 !important;
+  font-weight: 600;
+}
+.button-row {
+  text-align: center;
+  margin-top: 25px;
+}
+button {
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+   background: #eab308;
+  color: #ffffff;
+  margin: 0 6px;
+  transition: background 0.2s ease;
+}
+button:hover {
+  background: #ca8a04;
+}
+.score-text {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 700px) {
+  .glass-card {
+    width: 92%;
+    padding: 25px 20px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .subheading {
+    font-size: 0.85rem;
+  }
+  .question-text {
+    font-size: 0.95rem;
+  }
+  .option {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+  .score-text {
+    font-size: 1.1rem;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
